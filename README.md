@@ -19,9 +19,8 @@ velodyne의 VLP-16 PUCK 뷰어 프로그램
 
 puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 뒤 3D 그래픽 패키지를 이용해 시각화했다.
 
-언어는 파이썬
-
-환경은 윈도10
+*언어는 파이썬*
+*환경은 윈도10*
 
 ![그림1](https://user-images.githubusercontent.com/57425658/132470356-31537533-f514-40f4-9588-78a3fbb1f74b.gif)
 |:--:|
