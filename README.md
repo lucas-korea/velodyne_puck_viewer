@@ -18,13 +18,16 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 환경은 윈도10
 
-![image](https://user-images.githubusercontent.com/57425658/132467450-5627bd4a-25bb-4f55-9272-c47e65d8bc05.png)*뷰어 프로그램 작동모습(사무실 전경)*
+![image](https://user-images.githubusercontent.com/57425658/132467450-5627bd4a-25bb-4f55-9272-c47e65d8bc05.png)*
+|:--:|
+| <b>뷰어 프로그램 작동모습(사무실 전경)</b>|
 
 
 여러가지 색깔이나 크기 같은 옵션을 넣을 수 있으나, 그럴 경우 위와 같이 너무 느려지는 단점이 있다. (아래 그림과 비교하면 fps 차이가 난다) 아무래도 파이썬을 이용해 실시간 그래픽 표현은 쉬지 않은 듯하다.. 여하튼 아래 그림에서 보이는 veloview(제조사에서 직접 제공해주는 뷰어 프로그램)와 비슷한 모습까지 표현은 가능하다. 
 
-![image](https://user-images.githubusercontent.com/57425658/132467465-173d4ce7-fb90-43a8-8e78-e4449d252ef3.png)*라이다로 촬영한 사무실 전경 (좌)veloview (우) 직접 작성한 프로그램 비교*
-
+![image](https://user-images.githubusercontent.com/57425658/132467465-173d4ce7-fb90-43a8-8e78-e4449d252ef3.png)
+|:--:|
+| <b>라이다로 촬영한 사무실 전경 (좌)veloview (우) 직접 작성한 프로그램 비교</b>|
 
 작동방법의 경우, **server** 프로그램을 먼저 돌려준 뒤, **client** 프로그램을 돌려주면 된다
 
@@ -35,8 +38,9 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 3d 그래픽 코드에서 로드가 많이 걸려 딜레이가 생겨 패킷을 불규칙적으로 받는 문제가 있었다. 한 프로그램 내에서 스레드로 해결하려 했는데 잘 안됐고, server-client로 프로그램 두 개를 돌려 스레드와 같은 효과를 냈다(맞나? ㅋㅋ) 
 
   
-![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)*작동하는 과정*
-
+![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)
+|:--:|
+| <b>작동하는 과정</b>|
 |![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)|
 |:--:|
 | <b>프로그램 개요</b>|
