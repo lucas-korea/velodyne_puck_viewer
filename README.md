@@ -18,6 +18,9 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 환경은 윈도10
 
+
+![image](https://user-images.githubusercontent.com/57425658/132467383-7505e278-71b9-4816-9ddb-5ef6d4975f2c.png)
+
 [##_Image|kage@bR1uIf/btrd04CEUSz/MGgWos8NJUtcYVeNyiZVb0/img.png|alignCenter|data-origin-width="920" data-origin-height="542" width="836" height="493" data-ke-mobilestyle="widthOrigin"|뷰어 프로그램 작동모습(사무실 전경)||_##]
 
 여러가지 색깔이나 크기 같은 옵션을 넣을 수 있으나, 그럴 경우 위와 같이 너무 느려지는 단점이 있다. (아래 그림과 비교하면 fps 차이가 난다) 아무래도 파이썬을 이용해 실시간 그래픽 표현은 쉬지 않은 듯하다.. 여하튼 아래 그림에서 보이는 veloview(제조사에서 직접 제공해주는 뷰어 프로그램)와 비슷한 모습까지 표현은 가능하다. 
@@ -36,18 +39,4 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 코드는 깃헙에 올려놨다 [여기](https://github.com/lucas-korea/velodyne_puck_viewer)
 
-[
-
-GitHub - lucas-korea/velodyne\_puck\_viewer: velodyne의 VLP-16 PUCK 뷰어 프로그램
-
-velodyne의 VLP-16 PUCK 뷰어 프로그램. Contribute to lucas-korea/velodyne\_puck\_viewer development by creating an account on GitHub.
-
-github.com
-
-
-
-](https://github.com/lucas-korea/velodyne_puck_viewer)
-
 구현하는 과정에서 패킷 구조와 패킷 내 데이터가 의미하는 걸 정리한 파일이다. 출처는 velodyne에서 제공해주는 'User Manual and Programming'이라는 이름의 매뉴얼이다. 주로 여기서 참고하긴 했지만, 다른 매뉴얼도 많고 도움이 다 되므로 다 참고하는 게 좋다. 
-
-[##_File|kage@bv2Ijk/btretbt22fM/Mfl7kAC4EBj7H7L1wrMXc1/tfile.docx|filename="UDP Ethernet packets.docx" size="0.97MB" data-ke-align="alignCenter"|_##]
