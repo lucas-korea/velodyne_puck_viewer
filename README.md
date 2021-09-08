@@ -1,6 +1,6 @@
 
-## velodyne_puck_viewer
-# velodyne의 VLP-16 PUCK 뷰어 프로그램
+# velodyne_puck_viewer
+## velodyne의 VLP-16 PUCK 뷰어 프로그램
 
 puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 뒤 3D 그래픽 패키지를 이용해 시각화했다.
 
@@ -32,4 +32,4 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 UDP Ethernet packets.docx : 패킷 구조와 패킷 내 데이터가 의미하는 걸 정리한 파일 
 
-[관련 포스팅](https://cjung.tistory.com/15)
+관련 포스팅 : https://cjung.tistory.com/15(https://cjung.tistory.com/15)
