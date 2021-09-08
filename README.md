@@ -38,7 +38,9 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
   
 ![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)*작동하는 과정*
 
-![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)*프로그램 개요"
+![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)
+{:.image-caption}
+*프로그램 개요"
 </center>
 
 코드는 깃헙에 올려놨다 [여기](https://github.com/lucas-korea/velodyne_puck_viewer)
