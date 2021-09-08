@@ -37,7 +37,7 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
   
 ![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)*작동하는 과정*
 
-![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)
+|![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)|
 |:--:|
 | <b>프로그램 개요</b>|
 
