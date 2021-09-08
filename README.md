@@ -32,4 +32,4 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 UDP Ethernet packets.docx : 패킷 구조와 패킷 내 데이터가 의미하는 걸 정리한 파일 
 
-관련 포스팅 : https://cjung.tistory.com/15(https://cjung.tistory.com/15)
+관련 포스팅 : https://cjung.tistory.com/15
