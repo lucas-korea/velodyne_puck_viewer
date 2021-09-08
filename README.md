@@ -18,14 +18,13 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 환경은 윈도10
 
+![image](https://user-images.githubusercontent.com/57425658/132467450-5627bd4a-25bb-4f55-9272-c47e65d8bc05.png)
 
-![image](https://user-images.githubusercontent.com/57425658/132467383-7505e278-71b9-4816-9ddb-5ef6d4975f2c.png)
-
-[##_Image|kage@bR1uIf/btrd04CEUSz/MGgWos8NJUtcYVeNyiZVb0/img.png|alignCenter|data-origin-width="920" data-origin-height="542" width="836" height="493" data-ke-mobilestyle="widthOrigin"|뷰어 프로그램 작동모습(사무실 전경)||_##]
 
 여러가지 색깔이나 크기 같은 옵션을 넣을 수 있으나, 그럴 경우 위와 같이 너무 느려지는 단점이 있다. (아래 그림과 비교하면 fps 차이가 난다) 아무래도 파이썬을 이용해 실시간 그래픽 표현은 쉬지 않은 듯하다.. 여하튼 아래 그림에서 보이는 veloview(제조사에서 직접 제공해주는 뷰어 프로그램)와 비슷한 모습까지 표현은 가능하다. 
 
-[##_Image|kage@Dneyw/btrd0zW5ImU/BtlXrHnQbkU1ay0CJvIA21/img.png|alignCenter|data-origin-width="920" data-origin-height="542" data-ke-mobilestyle="widthOrigin"|라이다로 촬영한 사무실 전경 (좌)veloview (우) 직접 작성한 프로그램 비교||_##]
+![image](https://user-images.githubusercontent.com/57425658/132467465-173d4ce7-fb90-43a8-8e78-e4449d252ef3.png)
+
 
 작동방법의 경우, **server** 프로그램을 먼저 돌려준 뒤, **client** 프로그램을 돌려주면 된다
 
@@ -35,7 +34,11 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 3d 그래픽 코드에서 로드가 많이 걸려 딜레이가 생겨 패킷을 불규칙적으로 받는 문제가 있었다. 한 프로그램 내에서 스레드로 해결하려 했는데 잘 안됐고, server-client로 프로그램 두 개를 돌려 스레드와 같은 효과를 냈다(맞나? ㅋㅋ) 
 
-[##_Image|kage@qanI4/btrd21Lz76s/ty5kIqxYks5mX5cyTJAxx1/img.png|alignCenter|data-origin-width="1196" data-origin-height="282" data-ke-mobilestyle="widthOrigin"|작동하는 과정||_##][##_Image|kage@bRCCwP/btrd1yi7MZ5/dPsaaDs3Lq2NGA8IcjmVKK/img.png|alignCenter|data-origin-width="798" data-origin-height="144" width="654" height="118" data-ke-mobilestyle="widthOrigin"|프로그램 개요||_##]
+![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)
+*뿌잉*
+
+![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)
+
 
 코드는 깃헙에 올려놨다 [여기](https://github.com/lucas-korea/velodyne_puck_viewer)
 
