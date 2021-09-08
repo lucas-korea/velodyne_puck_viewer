@@ -34,14 +34,12 @@ puck에서 나오는 UDP 패킷을 분석,  point cloud 데이터로 변환한 
 
 3d 그래픽 코드에서 로드가 많이 걸려 딜레이가 생겨 패킷을 불규칙적으로 받는 문제가 있었다. 한 프로그램 내에서 스레드로 해결하려 했는데 잘 안됐고, server-client로 프로그램 두 개를 돌려 스레드와 같은 효과를 냈다(맞나? ㅋㅋ) 
 
-<center>
   
 ![image](https://user-images.githubusercontent.com/57425658/132467536-37ead8c8-6c7c-4992-a075-0dcd059656b4.png)*작동하는 과정*
 
 ![image](https://user-images.githubusercontent.com/57425658/132467558-01cc1d53-f34c-4dbe-9148-25495bbb8cb4.png)
-{:.image-caption}
-*프로그램 개요"
-</center>
+|:--:|
+| <b>프로그램 개요</b>|
 
 코드는 깃헙에 올려놨다 [여기](https://github.com/lucas-korea/velodyne_puck_viewer)
 
