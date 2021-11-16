@@ -4,6 +4,19 @@ import sys
 import numpy as np
 import gc
 
+HEADER = '''# .PCD v0.7 - Point Cloud Data file format
+VERSION 0.7
+FIELDS x y z intensity
+SIZE 4 4 4 4
+TYPE F F F F
+COUNT 1 1 1 1
+WIDTH {}
+HEIGHT 1
+VIEWPOINT 0 0 0 1 0 0 0
+POINTS {}
+DATA ascii
+'''
+
 angle = np.array([-15, 1, -13, 3 ,-11, 5, -9, 7, -7, 9, -5, 11, -3, 13, -1, 15])
 angle_radian = angle / 180 * math.pi
 angle_radian = np.transpose(np.array([angle_radian]))

@@ -5,9 +5,11 @@ import color_arr
 import time
 import gc
 
+import parse
+
 DATA_RECV_BYTES = 1855488
 LIDAR_DATA_SHAPE = (57984, 4)
-
+time.time
 def rm_zero_point(point_cloud): ## xyz가 전부 0이거나 Intensity = 0인 경우를 삭제
     mask_array1 = point_cloud[:, 0] == 0
     mask_array2 = point_cloud[:, 1] == 0
@@ -122,6 +124,28 @@ def view_image(client, time1):
         time1 = time.time()
         plt.pause(0.001)
 
+def save_pcd(client, i):
+    point_cloud = rm_zero_point(
+        np.reshape(np.frombuffer(client.recv(DATA_RECV_BYTES), dtype=np.float64), LIDAR_DATA_SHAPE))
+    if i > 5:
+        with open(str(time.localtime().tm_year) + str(time.localtime().tm_mon) +
+                  str(time.localtime().tm_mday) + str(time.localtime().tm_hour) +
+                  str(time.localtime().tm_min) + str(time.localtime().tm_sec)
+                  + ".pcd", 'w') as f:
+            f.write(parse.HEADER.format(len(point_cloud), len(point_cloud)))
+            point_cloud = np.round(point_cloud, 4)
+            for i in range(len(point_cloud)):
+                f.write(str(point_cloud[i][0]))
+                f.write(' ')
+                f.write(str(point_cloud[i][1]))
+                f.write(' ')
+                f.write(str(point_cloud[i][2]))
+                f.write(' ')
+                f.write(str(point_cloud[i][3]))
+                f.write('\n')
+            print("pcd file saved")
+            # exit(1)
+
 def main():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     LOCALHOST = "127.0.0.1"
@@ -130,7 +154,9 @@ def main():
     print("conecte success\n")
 
     time1 = time.time()
+    for i in range(7):
+        save_pcd(client, i)
     # view_pcl(client, time1)
-    view_image(client, time1)
+    # view_image(client, time1)
 if __name__ == "__main__":
     main()
