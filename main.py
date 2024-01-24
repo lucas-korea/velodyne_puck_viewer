@@ -20,7 +20,7 @@ def get_data_PCL(serverSocket_):
 def main():
     pool = multiprocessing.Pool(2)
     ## LIDAR data recv UDP setting
-    IP_ADDRESS = "192.168.0.77"
+    IP_ADDRESS = "192.168.0.100"
     PORT_NO = 2368
     serverSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     print(serverSocket.bind((IP_ADDRESS, PORT_NO)))
